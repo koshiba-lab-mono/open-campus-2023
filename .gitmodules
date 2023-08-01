@@ -1,0 +1,3 @@
+[submodule "hand_sign_recognition"]
+	path = hand_sign_recognition
+	url = https://github.com/kou1046/hand_sign_recognition
