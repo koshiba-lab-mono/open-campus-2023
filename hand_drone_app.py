@@ -1,5 +1,4 @@
 from __future__ import annotations
-from enum import IntEnum
 import cv2
 from threading import Thread
 from time import time
@@ -36,7 +35,6 @@ def control_tello():
         print("sample")
         if not is_continous_sign:
             continue
-
         if tello.is_flying:
             if hand_sign_label == HandSign.INDEX_FINGER:
                 tello.move_up(30)
