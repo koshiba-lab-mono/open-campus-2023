@@ -1,7 +1,7 @@
 from __future__ import annotations
 import cv2
 from hand_sign_recognition.lib import HandDetector, HandSignClassifier
-from logger import HandSign
+from train import HandSign
 
 cap = cv2.VideoCapture(0)
 detector = HandDetector()

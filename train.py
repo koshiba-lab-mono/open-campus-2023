@@ -1,6 +1,5 @@
 import os
 from enum import IntEnum
-from sklearn.model_selection import train_test_split
 from hand_sign_recognition.lib import (
     HandSignDataLoggerGUI,
     NdJsonLabeledHandPointsStore,
@@ -33,8 +32,10 @@ def train():
 
     # モデル学習オブジェクト
     trainer = HandSignTrainer(store, classifier)
-    trainer.train(os.path.join(os.path.dirname(__file__), "sample_weight.pth"))
+    save_model_path = "sample_weight.pth"
+    trainer.train(save_model_path)
 
 
 if __name__ == "__main__":
+    get_data() # ESC押下で終了
     train()
