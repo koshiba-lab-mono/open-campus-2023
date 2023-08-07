@@ -1,11 +1,14 @@
 from __future__ import annotations
-import cv2
+import sys
 from threading import Thread
 from time import time
 
-from hand_sign_recognition.lib import HandDetector, HandSignClassifier
+import cv2
 from djitellopy import Tello
-from train import HandSign
+
+sys.path.append(".")
+from hand_sign_recognition.lib import HandDetector, HandSignClassifier
+from main.train import HandSign
 
 
 #

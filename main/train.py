@@ -1,5 +1,8 @@
 import os
+import sys
 from enum import IntEnum
+
+sys.path.append(".")
 from hand_sign_recognition.lib import (
     HandSignDataLoggerGUI,
     NdJsonLabeledHandPointsStore,
@@ -37,5 +40,5 @@ def train():
 
 
 if __name__ == "__main__":
-    get_data() # ESC押下で終了
+    get_data()  # ESC押下で終了
     train()

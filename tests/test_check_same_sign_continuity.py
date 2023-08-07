@@ -4,7 +4,7 @@ import unittest
 from time import time
 
 sys.path.append(".")
-from hand_drone_app import check_same_sign_continuity
+from main.hand_drone_app import check_same_sign_continuity
 
 
 class TestCheckSameSignContinuity(unittest.TestCase):
